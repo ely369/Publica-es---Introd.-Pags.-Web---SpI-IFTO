@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8"> <!--UTF-8 (Unicode Transformation Format 8-bit)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--width=device-width: define a largura do viewport como igual à largura do dispositivo-->
+    <!--initial-scale=1.0: Define o fator de escala inicial do viewport como 1.0(escala original)-->
+    <title> Artes Abstratas </title>
+    <style type="text/css">
+
+        /*font*/
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+        body { /*Gradiente e animação*/
+            background: linear-gradient(to right, #FF6F00, #9C27B0);
+            background-size: 200% 200%;
+            position: relative;
+            animation: granulate 10s infinite;
+        }
+        @keyframes granulate {
+            0%, 100% {
+            background-position: 0% 0%;
+            } 
+            50% {
+         background-position: 100% 100%;
+            }
+        }
+
+        h1 { /*Estilização Titúlo*/
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-align: center;
+            top: 0px;
+        }
+        .window-glass {
+            background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com transparência */
+            backdrop-filter: blur(10px); /* Efeito de desfoque */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            padding: 20px; /* Espaçamento interno */
+            width: 300px; /* Largura da janela */
+            position: absolute; /* Posicionamento absoluto */
+            top: 50%; /* Posicionamento vertical */
+            left: 50%; /* Posicionamento horizontal */
+            transform: translate(-50%, -50%); /* Centralizar a janela */
+        }
+
+        .wrapper {
+        display: flex;
+        height: 100vh; /* Define a altura total da página */
+        }
+
+        .window-glass-info {
+            background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com transparência */
+            backdrop-filter: blur(20px); /* Efeito de desfoque */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            padding: 20px; /* Espaçamento interno */
+            width: 400px; /* Largura da janela */
+            position: fixed; /* Posicionamento absoluto */
+            top: 40px; /* Posicionamento vertical */
+            right: 0px; /* Posicionamento horizontal */
+            z-index: 9999;
+            
+        }
+
+        h2 { /*Estilização Titúlo info*/
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-align: center;
+
+        }
+        
+        p { /*Estilização parágrafo info*/
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .title-sequence {
+            position: absolute;
+            right: 0;
+            top: 0;
+            line-height: 0.3;
+            font-size: 30px; /* Aumenta o tamanho da fonte para 1.2 vezes o tamanho padrão */
+
+        }
+
+        .window-glass1 {
+            background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com transparência */
+            backdrop-filter: blur(10px); /* Efeito de desfoque */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            padding: 20px; /* Espaçamento interno */
+            width: 500px; /* Largura da janela */
+            position: absolute; /* Posicionamento absoluto */
+            top: 985px; /* Posicionamento vertical */
+            left: 0px; /* Posicionamento horizontal na margem esquerda */
+        }
+
+        .window-glass2 {
+            background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com transparência */
+            backdrop-filter: blur(10px); /* Efeito de desfoque */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            padding: 20px; /* Espaçamento interno */
+            width: 500px; /* Largura da janela */
+            position: absolute; /* Posicionamento absoluto */
+            top: 500px; /* Posicionamento vertical */
+            left: 0px; /* Posicionamento horizontal na margem esquerda */
+        }
+
+        .window-glass3 {
+            background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com transparência */
+            backdrop-filter: blur(10px); /* Efeito de desfoque */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            padding: 20px; /* Espaçamento interno */
+            width: 500px; /* Largura da janela */
+            position: absolute; /* Posicionamento absoluto */
+            top: 0px; /* Posicionamento vertical */
+            left: 0px; /* Posicionamento horizontal na margem esquerda */
+            
+        }
+       
+        h3 { /*Estilização Titúlo info*/
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-align: left;
+        }
+        
+        p { /*Estilização Titúlo info*/
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-align: left;
+
+        }
+
+        .img {
+            max-width: 100%; /* Define a largura máxima da imagem */
+            height: auto; /* Mantém a proporção original da imagem */
+            display: block; /* Remove espaçamentos indesejados abaixo da imagem */
+            margin: 0 auto; /* Centraliza a imagem horizontalmente */
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+
+    <div class="window-glass-info">
+        <h2>O que é Arte Abstrata?</h2>
+        <p>Arte abstrata é um estilo artístico que se distingue pela ausência de representação figurativa ou narrativa reconhecível. Em vez de retratar objetos ou pessoas específicas, a arte abstrata se concentra na expressão de formas, cores, linhas e texturas de maneira não representacional.</p>
+        <p>Na arte abstrata, o foco está nas qualidades intrínsecas dos elementos visuais e na criação de uma experiência estética baseada na harmonia, equilíbrio, composição e emoções evocadas pelas formas e cores utilizadas. Os artistas abstratos podem buscar transmitir sensações, estados de espírito ou conceitos abstratos por meio de suas obras.</p>
+        <p>A natureza abstrata da arte permite uma ampla liberdade criativa e interpretação por parte do espectador, que pode encontrar significados pessoais e emocionais nas obras, muitas vezes abrindo espaço para múltiplas interpretações.</p>
+    
+    </div>
+
+    <div class="title-sequence">
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+        <h1>ArteAbstrata</h1>
+    </div>
+
+    <div class="window-glass1">
+        <img class="img" src="https://cdn.culturagenial.com/imagens/amarelo-vermelho-azul-pintura-de-wassily-kandinsky-cke.jpg" alt="Obra de arte 1">
+        <h2>Amarelo-Vermelho-Azul, de Wassily Kandinsky</h2>
+        <p>“A cor é um meio para exercer uma influência direta sobre a alma. A cor é a tecla; 
+            o olho, o martelo. A alma, o instrumento das mil cordas. O artista é a mão que, 
+            ao tocar nesta ou naquela tecla, obtém da alma a vibração justa. A alma humana, 
+            tocada no seu ponto mais sensível” </p>
+    </div>
+    
+    <div class="window-glass2">
+        <img class="img" src="https://cdn.culturagenial.com/imagens/number-5-0-cke.jpg" alt="Obra de arte 2">
+        <h2>Número 5, de Jackson Pollock</h2>
+        <p>No. 5” (1948) é uma pintura da autoria de Jackson Pollock, 
+        terminada em 1948 – pós segunda guerra mundial – no célebre período do “dripping”</p>
+    </div>
+    
+    <div class="window-glass3">
+        <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Paul_Klee%2C_Insula_dulcamara.jpg/640px-Paul_Klee%2C_Insula_dulcamara.jpg" alt="Obra de arte 3">
+        <h3>Insula Dulcamara, de Paul Klee</h3>
+        <p>"Não devemos recear ver-nos envolvidos no meio de elementos mais indigestos; 
+            temos apenas que esperar que as coisas mais difíceis de assimilar não 
+            venham perturbar o equilíbrio. Desta maneira, a vida é, com certeza, 
+            mais apaixonante que uma vida burguesa muito ordenada. E cada um é livre, 
+            de acordo com seus gestos, ao escolher entre o doce e o salgado dos dois 
+            pratos da balança."</p>
+    </div>
+
+</body>
