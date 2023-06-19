@@ -1,0 +1,173 @@
+/* Estilos gerais */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #d9d9d9d9;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  width: 200px; 
+  height: auto; 
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  background-color: #10734f;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #a68a56;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  background-color: #10734f;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #a68a56;
+}
+
+/* Desing */
+.hero {
+  background-image: url('back.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: #000000;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Produtos */
+.product-container {
+  display: flex;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-images {
+  width: 300px;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-info {
+  margin-left: 20px;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  background-color: #10734f;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #a68a56;
+}
+
+.product-slogan {
+  font-size: 14px;
+  color: #555555;
+  margin-top: 10px;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
